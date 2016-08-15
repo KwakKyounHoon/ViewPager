@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Test</string>
+    <string name="main_text">안녕하세요.</string>
+    <string name="first_category">최근 검색 기록</string>
+    <string name="second_category">호스트가 되세요</string>
+    <string name="thirld_category">주말 여행 추천 도시</string>
+    <string name="fourth_category">에어비앤비 추천</string>
+    <string name="fifth_category">인기 여행지</string>
+    <string name="sixth_category">가이드북</string>
+    <string name="seventh_category">친구 초대하기</string>
+</resources>
