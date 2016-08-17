@@ -11,9 +11,8 @@ import com.didimdol.kwak.test.data.MainData;
 import com.didimdol.kwak.test.view.AirBnBCommendViewHoler;
 import com.didimdol.kwak.test.view.CategoryViewHolder;
 import com.didimdol.kwak.test.view.HostRecommendViewHolder;
-import com.didimdol.kwak.test.view.SearchSliderViewHolder;
 import com.didimdol.kwak.test.view.MainTextViewHolder;
-import com.didimdol.kwak.test.view.WeekComendViewHolder;
+import com.didimdol.kwak.test.view.SearchSliderViewHolder;
 
 
 /**
@@ -130,8 +129,8 @@ public class MainListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
                 return holder;
             }
             case VIEW_TYPE_WEEKCOMMEND : {
-                View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.view_weekcommend_slider, parent, false);
-                WeekComendViewHolder holder = new WeekComendViewHolder(view,fragmentManager);
+                View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.view_searchimage_slider, parent, false);
+                SearchSliderViewHolder holder = new SearchSliderViewHolder(view,fragmentManager);
                 return holder;
             }
             case VIEW_TYPE_CATEGORY_TITLE_WEEKCOMMEND : {
@@ -197,7 +196,7 @@ public class MainListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
             }
             position--;
             if (position == 0) {
-                WeekComendViewHolder wcvh = (WeekComendViewHolder)holder;
+                SearchSliderViewHolder wcvh = (SearchSliderViewHolder)holder;
                 wcvh.setImageData(mainData.getWeekCommend());
                 return ;
             }

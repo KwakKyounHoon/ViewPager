@@ -2,7 +2,7 @@ package com.didimdol.kwak.test.adapter;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.app.FragmentStatePagerAdapter;
 
 import com.didimdol.kwak.test.data.ImageData;
 import com.didimdol.kwak.test.data.ImageDatas;
@@ -14,7 +14,7 @@ import java.util.List;
 /**
  * Created by Kwak on 2016-08-14.
  */
-public class ImagePagerAdapter extends FragmentPagerAdapter {
+public class ImagePagerAdapter extends FragmentStatePagerAdapter {
     List<ImageData> items = new ArrayList<>();
     ImageDatas datas = new ImageDatas();
 
